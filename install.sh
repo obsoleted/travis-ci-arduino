@@ -128,6 +128,8 @@ function build_platform()
   local platform_stdout
   platform_stdout=$(arduino --board $platform --save-prefs 2>&1)
 
+  echo -n " test "
+
   # grab the exit status of the arduino board change
   local platform_switch=$?
 
